@@ -1,3 +1,4 @@
+# build and release tool1 and tool2, not foo itself (no main.go in root)
 project_name: foo
 release:
   github:

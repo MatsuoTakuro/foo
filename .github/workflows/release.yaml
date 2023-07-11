@@ -22,6 +22,6 @@ jobs:
         uses: goreleaser/goreleaser-action@v2
         with:
           version: latest
-          args: release --rm-dist
+          args: release --rm-dist # use .goreleaser.yml file in the root directory for configuration automatically
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # change Workflow permissions as Read and write permissions in Settings > Actions > General
