@@ -1,0 +1,12 @@
+project_name: foo
+release:
+  github:
+    owner: MatsuoTakuro
+    name: foo
+builds:
+- id: tool1
+  main: ./cmd/tool1/main.go
+  binary: tool1
+- id: tool2
+  main: ./cmd/tool2/main.go
+  binary: tool2
