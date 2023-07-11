@@ -21,4 +21,4 @@ jobs:
           go-version: ${{ matrix.go }}
 
       - run: go test ./...
-      - run: go test-bench .-benchmem
+      - run: go test -bench . -benchmem
